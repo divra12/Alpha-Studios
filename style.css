@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: system-ui;
+   
+   
+}
+
+header {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-family: system-ui;
+    
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.gametext {
+    text-align: center;
+    padding: 20px;
+}
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.game-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.overlay video {
+    width: 100%; /* Anpassung auf 100% Breite */
+    height: 100%; /* Anpassung auf 100% Höhe */
+    object-fit: cover; /* Gleiche Formatierung wie das Bild */
+    border-radius: 15px;
+
+}
+
+.game-container:hover .overlay {
+    display: flex;
+}
