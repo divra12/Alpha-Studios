@@ -14,9 +14,21 @@
         }
 
         video {
-            width: 500px;
+            width: 500px; /* Standardbreite für PCs */
             height: 300px;
-            display: flexbox;
+        }
+
+        /* Stil für Smartphones */
+        @media only screen and (max-width: 600px) {
+            /* Stiländerungen für kleinere Bildschirme */
+            .gametext {
+                text-align: center; /* Zentriert den Text */
+            }
+
+            video {
+                width: 100%; /* Video passt sich der Bildschirmbreite an */
+                height: auto; /* Höhe automatisch anpassen */
+            }
         }
     </style>
 </head>
