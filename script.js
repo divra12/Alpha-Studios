@@ -29,4 +29,4 @@ var bildElement = document.getElementById('Train-Sim');
 bildElement.addEventListener('click', function() {
     // Öffne eine neue Seite 
     window.open('Train-Sim', '_blank');
-});
+}); 
